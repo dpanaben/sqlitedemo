@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SQLiteDemo</string>
+    <string name="text_tvRowCount">(row number/ total rows)</string>
+    <string name="text_Insert">Insert</string>
+    <string name="text_Query">Query</string>
+    <string name="text_Update">Update</string>
+    <string name="text_Delete">Delete</string>
+    <string name="text_TitleSpot">Spots</string>
+    <string name="text_SpotId">ID Number</string>
+    <string name="text_SpotName">Name</string>
+    <string name="text_SpotWeb">Web</string>
+    <string name="text_SpotPhone">Phone</string>
+    <string name="text_SpotAddress">Address</string>
+    <string name="text_Clear">Clear</string>
+    <string name="text_btNext">Next</string>
+    <string name="text_btBack">Back</string>
+    <string name="text_btCancel">Cancel</string>
+    <string name="btTakePicture">Take Picture</string>
+    <string name="btLoadPicture">Load Picture</string>
+
+    <string name="msg_InsertSuccess">Insert successfully</string>
+    <string name="msg_InsertFail">Insert fail</string>
+    <string name="msg_NameIsInvalid">Spot name is invalid</string>
+    <string name="msg_NoImage">No image</string>
+    <string name="msg_NoDataFound">No data found</string>
+    <string name="msg_RowDeleted">row deleted</string>
+    <string name="msg_RowUpdated">row updated</string>
+    <string name="msg_NoCameraAppsFound">no camera apps found</string>
+    <string name="write_external_storage_denied">沒有寫入外部儲存設備授權</string>
+
+    <string name="hint_search">Start your search here</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="hint_etLocationName">Location name</string>
+    <string name="btSubmit">Search</string>
+    <string name="btDirect">Direct</string>
+    <string name="msg_MapNotReady">Map not ready</string>
+    <string name="msg_LocationNameNotFound">Location name not found</string>
+    <string name="msg_LocationNameIsEmpty">Location name is empty</string>
+
+</resources>

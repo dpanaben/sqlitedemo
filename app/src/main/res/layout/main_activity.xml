@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvTitleSpot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/text_TitleSpot"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvRowCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ivSpot"
+                android:layout_toRightOf="@+id/tvTitleSpot"
+                android:text="@string/text_tvRowCount"
+                android:textColor="#0000FF"
+                android:textSize="20sp"
+                android:layout_marginLeft="12dp" />
+
+            <ImageView
+                android:id="@+id/ivSpot"
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:layout_below="@+id/tvTitleSpot"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="6dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvTitleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ivSpot"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_SpotId"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTitleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tvTitleId"
+                android:layout_below="@+id/tvId"
+                android:text="@string/text_SpotName"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTitleWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_SpotWeb"
+                android:textSize="16sp"
+                android:layout_below="@+id/tvName"
+                android:layout_alignRight="@+id/tvTitleName"
+                android:layout_alignEnd="@+id/tvTitleName" />
+
+            <TextView
+                android:id="@+id/tvTitlePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/tvTitleId"
+                android:layout_below="@+id/tvWeb"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_SpotPhone"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTitleAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/tvTitleId"
+                android:layout_below="@+id/tvPhone"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_SpotAddress"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignTop="@+id/tvTitleId"
+                android:layout_toRightOf="@+id/tvTitleId"
+                android:layout_toEndOf="@+id/tvTitleId"
+                android:layout_marginLeft="25dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignLeft="@+id/tvId"
+                android:layout_alignTop="@+id/tvTitleName" />
+
+            <TextView
+                android:id="@+id/tvWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:textColor="#0000FF"
+                android:layout_alignTop="@+id/tvTitleWeb"
+                android:layout_alignLeft="@+id/tvName" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:textColor="#0000FF"
+                android:layout_alignTop="@+id/tvTitlePhone"
+                android:layout_alignLeft="@+id/tvWeb" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@+id/tvPhone"
+                android:layout_alignTop="@+id/tvTitleAddress"
+                android:layout_alignLeft="@+id/tvPhone" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btNext"
+            android:layout_alignBottom="@+id/btNext"
+            android:layout_alignLeft="@+id/btInsert"
+            android:onClick="onBackClick"
+            android:text="@string/text_btBack" />
+
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btDelete"
+            android:layout_alignRight="@+id/btDelete"
+            android:onClick="onNextClick"
+            android:text="@string/text_btNext" />
+
+        <Button
+            android:id="@+id/btInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btUpdate"
+            android:onClick="onInsertClick"
+            android:text="@string/text_Insert" />
+
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onUpdateClick"
+            android:text="@string/text_Update" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btInsert"
+            android:layout_alignTop="@+id/btInsert"
+            android:layout_toRightOf="@+id/btUpdate"
+            android:onClick="onDeleteClick"
+            android:text="@string/text_Delete" />
+
+        <Button
+            android:id="@+id/btQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onQueryClick"
+            android:text="@string/text_Query"
+            android:layout_above="@+id/btInsert"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
